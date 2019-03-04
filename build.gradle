@@ -1,0 +1,15 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'application'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile 'net.sf.phat:sphinx4-core:5prealpha'
+  compile 'com.sparkjava:spark-core:2.7.2'
+  compile 'commons-cli:commons-cli:1.4'
+}
+
+mainClassName = 'com.synesthesiam.rhasspy.stt.Program'
